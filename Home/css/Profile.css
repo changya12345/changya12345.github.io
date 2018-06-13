@@ -1,0 +1,67 @@
+.pics li,.footer ul li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+.navbar-header img{
+    width: 86px;
+    height: 26px;
+    margin-top: 14px;
+}
+.navbar-default{
+    background-color: #3097d1;
+    border: none;
+    border-bottom: 1px #1c73a5 solid;
+    margin-bottom: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active>a{
+    background-color: #2578a7;
+    color: #fff;
+}
+.navbar-default .navbar-nav{
+    margin-left: 20px;
+}
+.banner{
+    background-image: url(../img/iceland.jpg);
+    color: #fff;
+    padding-top: 135px;
+    padding-bottom: 190px;
+}
+.banner img{
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+}
+.main{
+    margin-top: 20px;
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 80px;
+}
+.center{
+    width: 1042px;
+    margin: 0 auto;
+}
+.main img{
+    height: 225px;
+    padding: 2px 2px;
+}
+.footer{
+    padding: 55px;
+}
+.footer ul{
+    width: 340px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
