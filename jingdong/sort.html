@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>分类-京东</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="sort">
+<!--底部导航-->
+<nav>
+    <ul>
+        <li><a href="index.html"><i class="fa fa-home"><span>首页</span></i></a></li>
+        <li><a class="active" href=""><i class="fa fa-list"><span>分类</span></i></a></li>
+        <li><a href=""><i class="fa fa-question-circle-o"><i class="hot"></i><span>觅Me</span></i></a></li>
+        <li><a href=""><i class="fa fa-shopping-cart"><span>购物车</span></i></a></li>
+        <li><a href=""><i class="fa fa-user-o"><span>我的</span></i></a></li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="sort-nav">
+                    <li class="active">
+                        热门推荐
+                    </li>
+                    <li>
+                        手机数码
+                    </li>
+                    <li>
+                        家用电器
+                    </li>
+                    <li>
+                        电脑办公
+                    </li>
+                    <li>
+                        计生情趣
+                    </li>
+                    <li>
+                        美妆护肤
+                    </li>
+                    <li>
+                        个护清洁
+                    </li>
+                    <li>
+                        汽车用品
+                    </li>
+                    <li>
+                        京东超市
+                    </li>
+                    <li>
+                        男装
+                    </li>
+                    <li>
+                        男鞋
+                    </li>
+                    <li>
+                        女装
+                    </li>
+                    <li>
+                        女鞋
+                    </li>
+                    <li>
+                        母婴童装
+                    </li>
+                    <li>
+                        运动户外
+                    </li>
+                    <li>
+                        内衣配饰
+                    </li>
+                    <li>
+                        食品生鲜
+                    </li>
+                    <li>
+                        家具家装
+                    </li>
+                    <li>
+                        箱包手袋
+                    </li>
+                    <li>
+                        钟表珠宝
+                    </li>
+                    <li>
+                        图书音像
+                    </li>
+                    <li>
+                        医药保健
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-9 sort-list" id="shou">
+                <div class="active">
+                    <img src="sotr/rementuijian/top.jpg" alt="">
+                    <h5>热门品牌</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars1" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>家电热搜</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars11" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>热卖手机</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars111" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>手机数码</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>手机通讯</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma1" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>运营商</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma2" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>手机配件</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma3" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>摄影摄像</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma4" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>影音娱乐</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in shoujishuma5" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>家用电器</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>电脑办公</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>计生情趣</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>美妆护肤</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>个户清洁</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>汽车用品</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>京东超市</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>男装</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>男鞋</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>女装</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>女鞋</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>母婴童装</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>户外运动</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>内衣配饰</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>食品生鲜</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>家居家装</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>箱包手袋</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>钟表珠宝</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>图书音像</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="top"></div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/timeCountDown.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
