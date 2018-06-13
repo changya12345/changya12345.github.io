@@ -737,6 +737,7 @@ nav ul li .hot{
 
 /*返回顶部样式*/
 #top{
+	z-index: 110;
 	background-image: url(../img/top.png);
 	background-size: cover;
 	position: fixed;
@@ -794,6 +795,52 @@ nav ul li .hot{
 	 display: block;
  }
 
+
+ /*广告条部分样式*/
+ .ad{
+	 text-align: center;
+	 color: #fff;
+	 font-size:14px;
+ }
+ .ad .left p{
+	 padding-top: 10px;
+ }
+ .ad .right p{
+	 padding-top: 20px;
+	 padding-bottom: 10px;
+ }
+ .ad::after{
+	 content: "";
+	 display: table;
+	 clear: both;
+ }
+.ad .left,
+.ad .right{
+	float: left;
+}
+.ad .left{
+	background: #000;
+	width: 70%;
+}
+.ad .right{
+	background: red;
+	width: 30%;
+}
+.ad img{
+	width:40px;
+	height: 40px;
+}
+.ad a{
+	color: #fff;
+}
+.ad span{
+	border: 1px #fff solid;
+	border-radius: 50%;
+	padding: 0px 5px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
 
 
 

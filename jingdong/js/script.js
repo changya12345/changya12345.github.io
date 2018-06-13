@@ -78,16 +78,7 @@ var zxx = {
 fnTimeCountDown(zxx.futureDate, zxx.obj());
 
 
-//顶部搜索条滚动变色事件
-//window.onscroll=function(){
-//	if(document.body.scrollTop>115){
-//		document.querySelector(".search").style.backgroundColor="red";
-//        top1.style.display="inline-block"
-//	}else{
-//		document.querySelector(".search").style.background="none";
-//        top1.style.display="none"
-//	}
-//}
+
 
 //京东直播滑动事件
 var swiper = new Swiper('.jingdongzhibo .swiper-container', {
@@ -253,13 +244,20 @@ top1.addEventListener("click",function(){
     },10)
 
 })
-//window.onscroll=function(){
-//    if(document.body.scrollTop>500){
-//
-//    }else{
-//        top1.style.display="none"
-//    }
-//}
+
+//顶部搜索条滚动变色事件
+window.onscroll=function(){
+    if(document.body.scrollTop>115){
+        document.querySelector(".search").style.backgroundColor="red";
+        document.querySelector(".search").style.top="0";
+        top1.style.display="inline-block"
+    }else{
+        document.querySelector(".search").style.background="none";
+        document.querySelector(".search").style.top="auto";
+        top1.style.display="none"
+
+    }
+}
 
 
 
@@ -285,7 +283,12 @@ for(var i=0;i<sortnav.length;i++){
     }
 }
 
-
+//广告条点击消失
+var ad=document.querySelector(".ad");
+var span=document.querySelector(".ad span");
+span.onclick=function(){
+    ad.style.display="none";
+}
 
 
 
