@@ -62,8 +62,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2631579">
-                  <caret line="739" column="16" selection-start-line="739" selection-start-column="16" selection-end-line="739" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.4105263">
+                  <caret line="693" column="21" selection-start-line="693" selection-start-column="21" selection-end-line="693" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -85,8 +85,8 @@
       <list>
         <option value="$PROJECT_DIR$/sort.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -572,14 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2631579">
-          <caret line="739" column="16" selection-start-line="739" selection-start-column="16" selection-end-line="739" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14035088">
@@ -597,6 +589,14 @@
             <element signature="e#2565#3946#0" expanded="false" />
             <element signature="e#3978#9114#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4105263">
+          <caret line="693" column="21" selection-start-line="693" selection-start-column="21" selection-end-line="693" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
