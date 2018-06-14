@@ -99,28 +99,31 @@ var swiper = new Swiper('.jingdongzhibo .swiper-container', {
 
 
 //为你推荐部分
+var shopp=document.querySelector("#shop");
+if(shopp !=null){
+    new Vue({
+        el:"#shop",
+        data:{
+            arrs:[
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/001.jpg",ico:"ziying"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/002.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/003.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/004.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/005.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/006.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/007.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/008.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/009.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/010.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/012.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/013.jpg"},
+                {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/014.jpg"},
+                {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/015.jpg"}
+            ]
+        }
+    })
+}
 
-new Vue({
-    el:"#shop",
-    data:{
-        arrs:[
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/001.jpg",ico:"ziying"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/002.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/003.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/004.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/005.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/006.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/007.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/008.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/009.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/010.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/012.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/013.jpg"},
-            {name:"安昕 良选男士船袜5双装 中筒棉袜上午男娃子子涵透气短袜 船",price:"￥21.80",img:"img/weinituijian/014.jpg"},
-            {name:"【京东超市】e洁 自动收口垃圾袋加厚手提式 45cm",price:"￥21.80",img:"img/weinituijian/015.jpg"}
-        ]
-    }
-})
 //sort 的v-for
 new Vue({
     el:"#shou",
@@ -226,6 +229,67 @@ new Vue({
             {name:"单电/微单相机",img:"sotr/main/58.jpg",link:""},
             {name:"摄像机",img:"sotr/main/59.jpg",link:""},
             {name:"运动相机",img:"sotr/main/60.jpg",link:""}
+        ],
+        jiayongdianqi1:[
+            {name:"电水壶/热水瓶",img:"sotr/jiayongdianqi/01.jpg",link:""},
+            {name:"电压力锅",img:"sotr/jiayongdianqi/02.jpg",link:""},
+            {name:"电饭煲",img:"sotr/jiayongdianqi/03.jpg",link:""},
+            {name:"电磁炉",img:"sotr/jiayongdianqi/04.jpg",link:""},
+            {name:"微波炉",img:"sotr/jiayongdianqi/05.jpg",link:""},
+            {name:"电饼铛",img:"sotr/jiayongdianqi/06.jpg",link:""},
+            {name:"豆浆机",img:"sotr/jiayongdianqi/07.jpg",link:""},
+            {name:"多用途锅",img:"sotr/jiayongdianqi/08.jpg",link:""},
+            {name:"料理机",img:"sotr/jiayongdianqi/09.jpg",link:""},
+            {name:"榨汁机/原汁机",img:"sotr/jiayongdianqi/10.jpg",link:""},
+            {name:"电烤箱",img:"sotr/jiayongdianqi/11.jpg",link:""},
+            {name:"养生壶/煎药壶",img:"sotr/jiayongdianqi/12.jpg",link:""},
+            {name:"电炖锅",img:"sotr/jiayongdianqi/13.jpg",link:""},
+            {name:"电烧烤炉",img:"sotr/jiayongdianqi/14.jpg",link:""},
+            {name:"面包机",img:"sotr/jiayongdianqi/15.jpg",link:""},
+            {name:"咖啡机",img:"sotr/jiayongdianqi/16.jpg",link:""},
+            {name:"煮蛋器",img:"sotr/jiayongdianqi/17.jpg",link:""},
+            {name:"电热饭盒",img:"sotr/jiayongdianqi/18.jpg",link:""},
+            {name:"其他厨房电器",img:"sotr/jiayongdianqi/19.jpg",link:""},
+            {name:"面条机",img:"sotr/jiayongdianqi/20.jpg",link:""},
+            {name:"酸奶机",img:"sotr/jiayongdianqi/21.jpg",link:""},
+            {name:"空气炸锅",img:"sotr/jiayongdianqi/22.jpg",link:""},
+            {name:"蔬果解毒机",img:"sotr/jiayongdianqi/23.jpg",link:""},
+
+        ],
+        jiayongdianqi2:[
+            {name:"电吹风",img:"sotr/jiayongdianqi/01.jpg",link:""},
+            {name:"剃须刀",img:"sotr/jiayongdianqi/02.jpg",link:""},
+            {name:"理发器",img:"sotr/jiayongdianqi/03.jpg",link:""},
+            {name:"足浴盆",img:"sotr/jiayongdianqi/04.jpg",link:""},
+            {name:"剃/脱毛器",img:"sotr/jiayongdianqi/05.jpg",link:""},
+            {name:"按摩器",img:"sotr/jiayongdianqi/06.jpg",link:""},
+            {name:"卷/直发器",img:"sotr/jiayongdianqi/07.jpg",link:""},
+            {name:"按摩椅",img:"sotr/jiayongdianqi/08.jpg",link:""},
+            {name:"口腔护理",img:"sotr/jiayongdianqi/09.jpg",link:""},
+            {name:"电子秤",img:"sotr/jiayongdianqi/10.jpg",link:""},
+            {name:"美容仪",img:"sotr/jiayongdianqi/11.jpg",link:""},
+            {name:"其他健康电器",img:"sotr/jiayongdianqi/12.jpg",link:""}
+        ],
+        jiayongdianqi3:[
+            {name:"全部",img:"sotr/jiayongdianqi/01.jpg",link:""},
+            {name:"双门冰箱",img:"sotr/jiayongdianqi/02.jpg",link:""},
+            {name:"对开门冰箱",img:"sotr/jiayongdianqi/03.jpg",link:""},
+            {name:"十字对开门",img:"sotr/jiayongdianqi/04.jpg",link:""},
+            {name:"三门冰箱",img:"sotr/jiayongdianqi/05.jpg",link:""},
+            {name:"单门冰箱",img:"sotr/jiayongdianqi/06.jpg",link:""},
+            {name:"多门冰箱",img:"sotr/jiayongdianqi/07.jpg",link:""},
+            {name:"冷柜/冰吧",img:"sotr/jiayongdianqi/08.jpg",link:""},
+            {name:"冰箱配件",img:"sotr/jiayongdianqi/09.jpg",link:""},
+            {name:"红酒柜",img:"sotr/jiayongdianqi/10.jpg",link:""},
+        ],
+        jiayongdianqi4:[
+            {name:"波轮洗衣机",img:"sotr/jiayongdianqi/01.jpg",link:""},
+            {name:"滚筒洗衣机",img:"sotr/jiayongdianqi/02.jpg",link:""},
+            {name:"全部",img:"sotr/jiayongdianqi/03.jpg",link:""},
+            {name:"洗烘一体机",img:"sotr/jiayongdianqi/04.jpg",link:""},
+            {name:"迷你洗衣机",img:"sotr/jiayongdianqi/05.jpg",link:""},
+            {name:"洗衣机配件",img:"sotr/jiayongdianqi/06.jpg",link:""},
+            {name:"烘干机",img:"sotr/jiayongdianqi/07.jpg",link:""},
         ]
     }
 })
@@ -244,18 +308,29 @@ top1.addEventListener("click",function(){
     },10)
 
 })
+window.onscroll=function(){
+    if(top1 !=null){
+        if(document.body.scrollTop>300){
+            top1.style.display="inline-block"
+        }else{
+            top1.style.display="none"
+
+        }
+    }
+}
 
 //顶部搜索条滚动变色事件
+var search=document.querySelector(".search");
 window.onscroll=function(){
-    if(document.body.scrollTop>115){
-        document.querySelector(".search").style.backgroundColor="red";
-        document.querySelector(".search").style.top="0";
-        top1.style.display="inline-block"
-    }else{
-        document.querySelector(".search").style.background="none";
-        document.querySelector(".search").style.top="auto";
-        top1.style.display="none"
+    if(search !=null){
+        if(document.body.scrollTop>115){
+            search.style.backgroundColor="red";
+            search.style.top="0";
+        }else{
+            search.style.background="none";
+            search.style.top="auto";
 
+        }
     }
 }
 
@@ -286,8 +361,10 @@ for(var i=0;i<sortnav.length;i++){
 //广告条点击消失
 var ad=document.querySelector(".ad");
 var span=document.querySelector(".ad span");
-span.onclick=function(){
-    ad.style.display="none";
+if(span !=null){
+    span.onclick=function(){
+        ad.style.display="none";
+    }
 }
 
 
@@ -295,9 +372,15 @@ span.onclick=function(){
 
 
 
+//当前页面的高度
+var pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+console.log(pageHeight-50-50)
 
 
-
+var asd9 = document.querySelector(".sort .main .col-xs-9")
+var asd3 = document.querySelector(".sort .main .col-xs-3")
+asd9.style.height = pageHeight-50-50+"px";
+asd3.style.height = pageHeight-50-50+"px";
 
 
 

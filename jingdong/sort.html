@@ -93,6 +93,9 @@
                     </li>
                 </ul>
             </div>
+
+
+
             <div class="col-xs-9 sort-list" id="shou">
                 <div class="active">
                     <img src="sotr/rementuijian/top.jpg" alt="">
@@ -183,16 +186,41 @@
                 </div>
                 <div>
                     <img src="sotr/main/banner.jpg" alt="">
-                    <h5>家用电器</h5>
+                    <h5>厨房小电</h5>
                     <div class="row text-center">
-                        <div v-for="ar in ars" class="col-xs-4">
+                        <div v-for="ar in jiayongdianqi1" class="col-xs-4">
                             <a :href="ar.link">
                                 <img :src="ar.img" alt="">
                                 <p>{{ar.name}}</p>
                             </a>
                         </div>
-                        <div class="col-xs-4"></div>
-                        <div class="col-xs-4"></div>
+                    </div>
+                    <h5>个护健康</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in jiayongdianqi2" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>冰箱</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in jiayongdianqi3" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>洗衣机</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in jiayongdianqi4" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -447,6 +475,25 @@
                         <div class="col-xs-4"></div>
                     </div>
                 </div>
+                <div>
+                    <img src="sotr/main/banner.jpg" alt="">
+                    <h5>医药保健</h5>
+                    <div class="row text-center">
+                        <div v-for="ar in ars" class="col-xs-4">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+
+
+
+                </div>
+
 
 
             </div>
@@ -455,7 +502,6 @@
 </div>
 
 <div id="top"></div>
-
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/vue.js"></script>
 <script src="js/swiper-4.2.6.min.js"></script>
