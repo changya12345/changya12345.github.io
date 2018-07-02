@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="index">
+<!--底部导航-->
+<nav class="nav">
+    <ul>
+        <li><a href="index.html" class="active"><i class="fa fa-home"><span>首页</span></i></a></li>
+        <li><a href="sort.html"><i class="fa fa-th-large"><span>分类</span></i></a></li>
+        <li><a href=""><i class="fa fa-tv"><span>TV直播</span></i></a></li>
+        <li><a href=""><i class="fa fa-shopping-cart"><span>购物车</span></i></a></li>
+        <li><a href=""><i class="fa fa-user-o"><span>我的</span></i></a></li>
+    </ul>
+</nav>
+<!--app头部提示-->
+    <div class="appTips">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="appTips-img text-center">
+                    <img src="img/loading_logo.svg"/>
+                </div>
+            </div>
+            <div class="col-xs-7">
+                <div class="appTips-text text-left">
+                    <p>三佳购物APP&nbsp;&nbsp;立即下载查看更多优惠</p>
+                    <p>三佳购物—爱生活&nbsp;惠万家</p>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="appTips-btn text-center">
+                    <a id="down_open">立即打开</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--首页搜索条部分-->
+    <div class="header-top">
+        <div class="row">
+            <div class="col-xs-2">
+                <a  href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-8">
+                <i class="fa fa-search text-left"></i>
+                <input type="search"  readonly="readonly" id="inputText" placeholder="搜索商品名/编号" />
+            </div>
+            <div class="col-xs-2">
+                <div class="search-bar-right" >
+                    <a href="">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--首页小导航-->
+<div class="snav">
+    <div class="box">
+        <ul>
+            <li class="active">首页</li>
+            <li>促销</li>
+            <li>家电网</li>
+            <li>佳团购</li>
+            <li>新品</li>
+        </ul>
+    </div>
+</div>
+<!--banner部分 轮播图-->
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/banner/01.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner/02.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner/03.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner/04.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="bannerb">
+        <div class="items">
+            <div class="item">
+                <a href="">
+                    <div class="imgD">
+                        <img src="img/item/04.jpg" alt="">
+                        <p>
+                            <span><del>￥22</del></span>
+                            <span>￥9.0</span>
+                        </p>
+                    </div>
+                    <div class="textD">
+                        <p>康师傅金汤虾球</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <div class="imgD">
+                        <img src="img/item/05.jpg" alt="">
+                        <p>
+                            <span><del>￥26</del></span>
+                            <span>￥19.0</span>
+                        </p>
+                    </div>
+                    <div class="textD">
+                        <p>御食园儿童礼包300g</p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <div class="imgD">
+                        <img src="img/item/06.jpg" alt="">
+                        <p>
+                            <span><del>￥22</del></span>
+                            <span>￥9.0</span>
+                        </p>
+                    </div>
+                    <div class="textD">
+                        <p>妙洁保鲜膜小碗3支</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--今日直播部分-->
+<div class="zhibo">
+    <h3>——今日直播——</h3>
+    <div class="hei">
+        <div class="shop-zb">
+            <a href="">
+                <div class="zhibozhong text-left">
+                    <p>
+                        <strong>•</strong>
+                        直播中
+                    </p>
+                </div>
+                <div class="time">
+                    <span>00</span> : <span>00</span> : <span>00</span>
+                </div>
+                <div class="shopping">
+                    <a href=""><p><i class="fa fa-shopping-cart"></i>去订购</p></a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="textZ">
+        <div class="row">
+            <div class="col-xs-8">
+                <p class="text-left">黄骅迁西特产脆冬枣板栗仁超值装</p>
+                <p class="text-left"><span>¥199</span></p>
+            </div>
+            <div class="col-xs-4">
+                <a href="">
+                    <p><i class="fa fa-video-camera"></i>看直播</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--首页领卷部分-->
+<div class="lingjuan">
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="juan br">
+                <div class="imgT">
+                    <img src="img/lingjuan/05.jpg" alt="">
+                    <span class="text-left">￥40</span>
+                </div>
+                <p>最高立减</p>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="juan br">
+                <div class="imgT">
+                    <img src="img/lingjuan/04.jpg" alt="">
+                    <span class="text-left">￥3元</span>
+                </div>
+                <p>晒单有礼</p>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="juan">
+                <div class="imgT">
+                    <img src="img/lingjuan/03.jpg" alt="">
+                    <span class="text-left">￥5元</span>
+                </div>
+                <p>完善信息</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--二频道部分-->
+<div class="erpindao">
+    <a href="">
+        <div class="left">
+            <p>
+                <img src="img/01.jpg" alt="">      惠而浦 智能变速原汁机
+            </p>
+        </div>
+        <div class="center">
+            | <span>￥999</span>
+        </div>
+        <div class="right">
+            <img src="img/02.jpg" alt="">
+        </div>
+    </a>
+</div>
+<!--家电品牌馆-->
+<div class="pinpaiguan">
+    <a href="">
+        <img src="img/jiadian/01.jpg" alt="">
+    </a>
+</div>
+<!--精品活动-->
+<div class="jingpinhuodong">
+    <h3>——精品活动——</h3>
+    <a href="">
+        <img src="img/jiadian/02.jpg" alt="">
+    </a>
+</div>
+<!--新品推荐-->
+<div class="xinpintuijian">
+    <h3>——新品推荐——</h3>
+    <div class="shopX">
+        <div class="box">
+            <ul>
+                <li class="bt bb bl br">
+                    <a href="">
+                        <div class="x">
+                            <img src="img/xinpin/xin.png" alt="">
+                        </div>
+                        <div class="shop bb">
+                            <img src="img/xinpin/01.jpg" alt="">
+                        </div>
+                        <p>艾可露抑菌除味宝（梦幻COCO）衣物专用260ml</p>
+                        <p><span>￥39</span></p>
+                    </a>
+                </li>
+                <li class="bt bb br bl">
+                    <a href="">
+                        <div class="x">
+                            <img src="img/xinpin/xin.png" alt="">
+                        </div>
+                        <div class="shop bb">
+                            <img src="img/xinpin/02.jpg" alt="">
+                        </div>
+                        <p>SUGAR 5.5英寸美颜全网通双卡双待智能手机（直降300）</p>
+                        <p><span>￥999</span></p>
+                    </a>
+                </li>
+                <li class="bt bb br bl">
+                    <a href="">
+                        <div class="x">
+                            <img src="img/xinpin/xin.png" alt="">
+                        </div>
+                        <div class="shop bb">
+                            <img src="img/xinpin/03.jpg" alt="">
+                        </div>
+                        <p>豪格家用电解水机健康套组</p>
+                        <p><span>￥3980</span></p>
+                    </a>
+                </li>
+                <li class="bb bt br bl">
+                    <a href="">
+                        <div class="x">
+                            <img src="img/xinpin/xin.png" alt="">
+                        </div>
+                        <div class="shop bb">
+                            <img src="img/xinpin/04.jpg" alt="">
+                        </div>
+                        <p>法国恺瑞3D印花御品缎上衣</p>
+                        <p><span>￥398</span></p>
+                    </a>
+                </li>
+                <li class="bb bt br bl">
+                    <a href="">
+                        <div class="x">
+                            <img src="img/xinpin/xin.png" alt="">
+                        </div>
+                        <div class="shop bb">
+                            <img src="img/xinpin/05.jpg" alt="">
+                        </div>
+                        <p>隆顺榕冰爽一夏超值组</p>
+                        <p><span>￥199</span></p>
+                    </a>
+                </li>
+                <li class="more text-center">
+                    <a href="">
+                        <p>查看更多</p>
+                        <p>SEE MORE</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--三佳推荐部分-->
+<div class="sanjiatuijian">
+    <h3>——三佳推荐——</h3>
+    <a href="">
+        <img src="img/jiadian/03.jpg" alt="">
+    </a>
+    <div class="shopS">
+        <div class="box">
+            <div>
+                <img src="img/sanjiatuijian/01.jpg" alt="">
+                <p>欧然空气炸锅劲爆款</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥298</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥0.6</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/sanjiatuijian/02.jpg" alt="">
+                <p>韩加餐具保洁柜特惠组（降价清仓）</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥199</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥0.4</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/sanjiatuijian/03.jpg" alt="">
+                <p>Baymax大白生物酵素洗衣液套组(降价)</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥258</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥0.52</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/sanjiatuijian/04.jpg" alt="">
+                <p>万洗夫人 生物酵素全效洗剂*15瓶______赠50ml量杯*3+泵头*2</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥298</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥3.28</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/sanjiatuijian/05.jpg" alt="">
+                <p>朗博飞 不粘锅定制套组(中国红)______赠碗筷八件套；全钢刀*2；木铲*1</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥298</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥3.28</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/sanjiatuijian/06.jpg" alt="">
+                <p>朗博飞营养不粘锅定制套组</p>
+                <div class="doll">
+                    <div class="left text-left"><span>￥298</span></div>
+                    <div class="right">
+                        <p>
+                            <img src="img/xinpin/li.jpg" alt="">
+                            <span>￥0.6</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="">
+                    <p>查看更多</p>
+                    <p>SEE MORE</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--热销排行榜-->
+<div class="rexiao">
+    <h3>——热销排行榜——</h3>
+    <div class="navs">
+        <div class="box">
+            <div class="active">
+                <p><i class="fa fa-comment-o"></i></p>
+                <p>热销前二十</p>
+            </div>
+            <div>
+                <p><i class="fa fa-soccer-ball-o"></i></p>
+                <p>食品健康</p>
+            </div>
+            <div>
+                <p><i class="fa fa-shopping-basket"></i></p>
+                <p>厨房电器</p>
+            </div>
+            <div>
+                <p><i class="fa fa-camera"></i></p>
+                <p>家电数码</p>
+            </div>
+            <div>
+                <p><i class="fa fa-hourglass-end"></i></p>
+                <p>家居家饰</p>
+            </div>
+            <div>
+                <p><i class="fa fa-suitcase"></i></p>
+                <p>服装箱包</p>
+            </div>
+            <div>
+                <p><i class="fa fa-female"></i></p>
+                <p>美妆个护</p>
+            </div>
+            <div>
+                <p><i class="fa fa-diamond"></i></p>
+                <p>珠宝配饰</p>
+            </div>
+            <div>
+                <p><i class="fa fa-tree"></i></p>
+                <p>户外运动</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopR">
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/01.jpg" alt="" class="bt bb">
+                    <p>隆顺榕冰爽一夏超值组</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/02.jpg" alt="" class="bt bb">
+                    <p>天津传统老味道火腿猪肉</p>
+                    <p><span>￥198</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/03.jpg" alt="" class="bt bb">
+                    <p>奇莱美洗衣液惊爆组</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/05.jpg" alt="" class="bt bb">
+                    <p>惠而浦塔扇</p>
+                    <p><span>￥298</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/06.jpg" alt="" class="bt bb">
+                    <p>大海荷叶鸡超值加赠装</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/07.jpg" alt="" class="bt bb">
+                    <p>嘉士伯乐堡啤酒惊爆组</p>
+                    <p><span>￥209</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/08.jpg" alt="" class="bt bb">
+                    <p>海信2匹圆柱冷暖立式空调</p>
+                    <p><span>￥4490</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/09.jpg" alt="" class="bt bb">
+                    <p>五粮液经典100年传奇酒特惠清仓组</p>
+                    <p><span>￥398</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/10.jpg" alt="" class="bt bb">
+                    <p>天津海河椴树原蜜惊爆组</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/11.jpg" alt="" class="bt bb">
+                    <p>7道鲜香酥小黄鱼罐头超值组</p>
+                    <p><span>￥198</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/12.jpg" alt="" class="bt bb">
+                    <p>Aux奥克斯智能破壁机特惠组合</p>
+                    <p><span>￥999</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/13.jpg" alt="" class="bt bb">
+                    <p>克拉斯顿多功能家用冲击电钻套装</p>
+                    <p><span>￥298</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/15.jpg" alt="" class="bt bb">
+                    <p>老板超越系列欧式直吸免拆洗烟灶组合（钢化玻璃）</p>
+                    <p><span>￥3380</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/16.jpg" alt="" class="bt bb">
+                    <p>德州桂香斋美味扒鸡劲爆秒杀组</p>
+                    <p><span>￥298</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/17.jpg" alt="" class="bt bb">
+                    <p>德州桂香斋美味扒鸡劲爆秒杀组</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/18.jpg" alt="" class="bt bb">
+                    <p>茶园世家登峰熟普洱茶300g*5</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/19.jpg" alt="" class="bt bb">
+                    <p>奥克斯全新升级熬煮型破壁机（直降200）</p>
+                    <p><span>￥1180</span></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="h">
+                    <img src="img/reziao20/h.jpg" alt="">
+                </div>
+                <div class="shop">
+                    <img src="img/reziao20/20.jpg" alt="" class="bt bb">
+                    <p>黄骅迁西特产脆冬枣板栗仁超值装</p>
+                    <p><span>￥199</span></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!--猜你喜欢-->
+<div class="cainixihuan">
+    <h3>——猜你喜欢——</h3>
+    <div  id="shop">
+        <div class="row">
+            <div class="col-xs-6" v-for="arr in arrs">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                    <p><span>{{arr.price}}</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="index-b">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="">
+                <img src="img/index-b/01.png" alt="">
+                <span>津津乐购</span>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="img/index-b/02.png" alt="">
+                <span>物美价实</span>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="img/index-b/04.png" alt="">
+                <span>无忧售后</span>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="img/index-b/05.png" alt="">
+                <span>海外正品</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="top">
+    <img src="img/top.png" alt="">
+</div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
