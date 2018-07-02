@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sort">
+<!--底部导航-->
+<nav class="nav">
+    <ul>
+        <li><a href="index.html"><i class="fa fa-home"><span>首页</span></i></a></li>
+        <li><a href="sort.html" class="active"><i class="fa fa-th-large"><span>分类</span></i></a></li>
+        <li><a href=""><i class="fa fa-tv"><span>TV直播</span></i></a></li>
+        <li><a href=""><i class="fa fa-shopping-cart"><span>购物车</span></i></a></li>
+        <li><a href=""><i class="fa fa-user-o"><span>我的</span></i></a></li>
+    </ul>
+</nav>
+<div class="top">
+    <div class="imgT">
+        <a href="index.html"><img src="sort-img/left.jpg" alt=""></a>
+    </div>
+    <h3>商品分类</h3>
+</div>
+<!--厨房电器-->
+<div class="chufangdianqi">
+    <div class="topD">
+        <a href="">
+            <h3>厨房电器</h3>
+            <p>一日三餐每日呈现 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-J">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiayongdianqi">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="shop-JB">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiayongdianqi1">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="button1">
+        <p>
+            <span>展开更多</span>
+            <img src="sort-img/bottom.jpg" alt="">
+        </p>
+    </div>
+</div>
+<!--家居装饰-->
+<div class="jiajvzhuangshi">
+    <div class="topD">
+        <a href="">
+            <h3>家居家饰</h3>
+            <p>到达家的感觉 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-G">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiagujiashi">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="shop-GB">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiagujiashi1">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="button2">
+        <p>
+            <span>展开更多</span>
+            <img src="sort-img/bottom.jpg" alt="">
+        </p>
+    </div>
+</div>
+<!--家电数码-->
+<div class="jiadianshuma">
+    <div class="topD">
+        <a href="">
+            <h3>家电数码</h3>
+            <p>打造全新智能生活 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-S">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiagujiashi">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="shop-SB">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in jiagujiashi1">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="button3">
+        <p>
+            <span>展开更多</span>
+            <img src="sort-img/bottom.jpg" alt="">
+        </p>
+    </div>
+</div>
+<!--食品饮料-->
+<div class="shipinyinliao">
+    <div class="topD">
+        <a href="">
+            <h3>食品饮料</h3>
+            <p>健康美味送到家 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-P">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in shipinyinliao">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服饰鞋包-->
+<div class="fushixiebao">
+    <div class="topD">
+        <a href="">
+            <h3>服饰鞋包</h3>
+            <p>适合自己气质的穿搭 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-F">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in fushixiebao">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="shop-FB">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in fushixiebao1">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="button4">
+        <p>
+            <span>展开更多</span>
+            <img src="sort-img/bottom.jpg" alt="">
+        </p>
+    </div>
+</div>
+<!--珠宝饰品-->
+<div class="zhubaopeishi">
+    <div class="topD">
+        <a href="">
+            <h3>珠宝配饰</h3>
+            <p>珍藏时光流转中的奢华 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-Z">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in zhubaopeishi">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--护肤洗护-->
+<div class="hufuxihu">
+    <div class="topD">
+        <a href="">
+            <h3>护肤洗护</h3>
+            <p>留住最美的时光 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-H">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in hufuxihu">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--收藏旅游-->
+<div class="shoucanglvyou">
+    <div class="topD">
+        <a href="">
+            <h3>收藏旅游</h3>
+            <p>满足温馨生活 <img src="sort-img/left-1.png" alt=""></p>
+        </a>
+    </div>
+    <div id="shop-C">
+        <div class="row">
+            <div class="col-xs-3" v-for="arr in shoucanglvyou">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--猜你喜欢-->
+<div class="cainixihuan">
+    <h3>——猜你喜欢——</h3>
+    <div  id="shop">
+        <div class="row">
+            <div class="col-xs-6" v-for="arr in arrs">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                    <p><span>{{arr.price}}</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="top">
+    <img src="img/top.png" alt="">
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
