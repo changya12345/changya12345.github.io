@@ -18,7 +18,7 @@ body{
 	padding: 0;
 }
 /*底部导航*/
-navb{
+.nav{
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
@@ -28,34 +28,34 @@ navb{
 	z-index: 100;
 	background: #fff;
 }
- navb ul li {
+ .nav ul li {
 	float: left;
 	list-style: none;
 	width: 20%;
 	text-align: center;
 }
- navb ul li::after{
+ .nav ul li::after{
 	content: "";
 	display: table;
 	clear: both;
 }
- navb ul li a{
+ .nav ul li a{
 	color: #5d5f6a;;
 }
-.active{
+ .nav ul li.active{
 	color: #f23030;
 }
- navb ul li .fa{
+ .nav ul li .fa{
 	position: relative;
 	padding-bottom: 5px;
 	font-size:22px;
 }
- navb ul li span{
+ .nav ul li span{
 	padding-top: 2px;
 	display: block;
 	font-size: 13px;
 }
- navb ul li .hot{
+ .nav ul li .hot{
 	width: 7px;
 	height: 7px;
 	display: inline-block;
