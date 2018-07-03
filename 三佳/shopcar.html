@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shopcar">
+<!--底部导航-->
+<nav class="nav">
+    <ul>
+        <li><a href="index.html"><i class="fa fa-home"><span>首页</span></i></a></li>
+        <li><a href="sort.html" ><i class="fa fa-th-large"><span>分类</span></i></a></li>
+        <li><a href=""><i class="fa fa-tv"><span>TV直播</span></i></a></li>
+        <li><a href="shopcar.html" class="active"><i class="fa fa-shopping-cart"><span>购物车</span></i></a></li>
+        <li><a href="sign.html"><i class="fa fa-user-o"><span>我的</span></i></a></li>
+    </ul>
+</nav>
+<div class="top">
+    <div class="imgT">
+        <a href="sort.html"><img src="sort-img/left.jpg" alt=""></a>
+    </div>
+    <h3>购物车（0）</h3>
+</div>
+<div class="car">
+    <img src="shopcar-img/car.jpg" alt="">
+    <p><a href="">您还没有登录！</a></p>
+    <p><span><a href="">现在去登录</a></span></p>
+    <h3><a href="">开始选购</a></h3>
+</div>
+
+
+
+
+
+
+
+
+
+<!--猜你喜欢-->
+<div class="cainixihuan">
+    <h3>——猜你喜欢——</h3>
+    <div  id="shop">
+        <div class="row">
+            <div class="col-xs-6" v-for="arr in arrs">
+                <a href="">
+                    <img :src="arr.img" alt="">
+                    <p>{{arr.name}}</p>
+                    <p><span>{{arr.price}}</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h3>——已经到底啦——</h3>
+</div>
+
+
+<div id="top">
+    <img src="img/top.png" alt="">
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
